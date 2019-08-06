@@ -17,9 +17,7 @@ const NavBar = () => {
                     <li>
                         <Link to="register"> Register</Link>
                     </li>
-                    <li>
-                        <Link to="test"> test</Link>
-                    </li>
+                   
                 </ul>
             </div>
         </nav>

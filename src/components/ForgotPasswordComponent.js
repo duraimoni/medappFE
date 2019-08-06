@@ -6,7 +6,6 @@ import {
   MDBCard,
   MDBCardBody,
   MDBModalFooter,
-  MDBIcon,
   MDBCardHeader,
   MDBBtn
 } from "mdbreact";
@@ -35,6 +34,7 @@ class ForgotPasswordComponent extends Component {
 
   submitHandler = event => {
     alert(this.state.username);
+    this.props.history.push("/login");
     event.target.className += " was-validated";
     event.preventDefault();
   };
@@ -46,7 +46,7 @@ class ForgotPasswordComponent extends Component {
         <MDBContainer>
           <MDBRow>
             <MDBCol md="3"></MDBCol>
-            <MDBCol md="5">
+            <MDBCol md="6">
               <MDBCard>
                 <MDBCardBody>
                   <MDBCardHeader className="form-header red-gradient rounded">
